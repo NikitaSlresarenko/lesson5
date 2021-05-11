@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* function confirmationPopp(){
+            return confirm('Are  shure? Custom');
+        }
+        function removeNote(confirm){
+            if (confirm()){
+            
+                
+                console.log('removed')
+            }
+        }
+        removeNote(confirmationPopp);
+        removeNote(confirm('Are u shure?'));*/
+        function padStr(str, n, symb){
+            
+            if (!n && !symb) return str;
+             symb = n && '***' || symb <= n && ' ';
+            
+            return str.substr(0, n = 5) + symb;
+        }
+
+                  substr = prompt( 'write a word no more than five letters');
+                  alert(padStr(substr, ' '));
+    </script>
+</body>
+</html>
